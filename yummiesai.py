@@ -70,7 +70,8 @@ if __name__ == "__main__":
         with open("output.pickle", "rb") as r:
             media: List[Media] = pickle.load(r)
 
-        df = pd.read_csv("response.txt", sep=":")
+        df = pd.read_csv("response.txt", sep=":", header=None)
+        print(df)
         df.columns = ["Index", "Rating", "Type", "Summary"]
         df.set_index("Index")
 
