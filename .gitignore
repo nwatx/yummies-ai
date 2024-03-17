@@ -1,0 +1,6 @@
+.env
+.idea
+*.pickle
+*.txt
+*.csv
+.ipynb_checkpoints
